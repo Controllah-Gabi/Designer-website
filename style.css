@@ -51,12 +51,7 @@ nav ul li{
     font-weight: 1000;
 }
 
-nav ul li a:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    border-radius: 5px;
-}
+
 
 nav ul li a{
     text-decoration: none;
@@ -137,4 +132,31 @@ button{
     
     background-position: center;
     background-size: cover;
+}
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: 
+#ffffff;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
